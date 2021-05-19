@@ -1,0 +1,164 @@
+*root {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.circles {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.circles img {
+  width: 600px;
+  height: 600px;
+}
+
+.top {
+  position: absolute;
+  top: -360px;
+  left: -360px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: -320px;
+  right: -390px;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 0%, 100%);
+  width: 330px;
+  height: 360px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-top {
+  background-image: url(/images/bg-pattern-card.svg);
+  width: 330px;
+  height: 140px;
+  border-radius: 10px 10px 0 0;
+}
+
+.profile {
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: -55px;
+}
+
+.heading {
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+.heading span {
+  margin-left: 5px;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+.location {
+  margin-top: -5px;
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+}
+
+hr {
+  width: 100%;
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.stats p {
+  font-weight: 700;
+}
+
+.stats span {
+  display: block;
+  color: hsl(0, 0%, 59%);
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 400px) {
+  .circles img {
+    width: unset;
+    height: unset;
+  }
+
+  .top {
+    position: absolute;
+    top: -600px;
+    left: -700px;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: -700px;
+    right: -700px;
+  }
+}
+
+@media (min-width: 786px) {
+  .top {
+    position: absolute;
+    top: -600px;
+    left: -480px;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: -700px;
+    right: -390px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top {
+    position: absolute;
+    top: -600px;
+    left: -400px;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: -600px;
+    right: -450px;
+  }
+}
